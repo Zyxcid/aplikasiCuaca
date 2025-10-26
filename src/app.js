@@ -8,6 +8,7 @@ const berita = require("./utils/berita");
 
 const app = express();
 
+const port = process.env.PORT || 4000;
 // Mendefinisikan path untuk Express config
 const direktoriPublik = path.join(__dirname, "../public");
 const direktoriViews = path.join(__dirname, "../templates/views");
@@ -101,6 +102,6 @@ app.get("/*page", (req, res) => {
   });
 });
 
-app.listen(4000, () => {
-  console.log("Server berjalan pada port 4000.");
+app.listen(port, () => {
+  console.log("Server berjalan pada port " + port);
 });
