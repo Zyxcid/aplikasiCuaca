@@ -2,9 +2,9 @@ const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
 const { title } = require("process");
-const geocode = require("./utils/geocode");
-const forecast = require("./utils/prediksiCuaca");
-const berita = require("./utils/berita");
+const geocode = require("./src/utils/geocode");
+const forecast = require("./src/utils/prediksiCuaca");
+const berita = require("./src/utils/berita");
 
 const app = express();
 
@@ -23,7 +23,7 @@ hbs.registerPartials(direktoriPartials);
 app.use(express.static(direktoriPublik));
 
 //ini halaman/page utama
-app.get("", (req, res) => {
+app.get("/", (req, res) => {
   res.render("index", {
     judul: "Aplikasi Cek Cuaca",
     nama: "Syahid Nurhidayatullah",
