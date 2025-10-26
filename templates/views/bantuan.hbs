@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    {{> htmlHead}}
+  </head>
+
+  <body>
+    <div class="main-content">
+      {{>header}}
+
+      <section class="faq-section">
+        <h2>FAQ (Frequently Asked Questions)</h2>
+        <p class="intro-text">
+          Berikut beberapa pertanyaan yang sering diajukan terkait penggunaan aplikasi ini. Jika kamu mengalami kendala lain, jangan ragu untuk menghubungi kami.
+        </p>
+
+        <div class="faq-list">
+          <details>
+            <summary>Bagaimana cara menggunakan aplikasi ini?</summary>
+            <p>
+              Cukup ketikkan nama lokasi (misalnya: "Padang" atau "Jakarta") pada kolom pencarian,
+              lalu tekan tombol Cari. Aplikasi akan menampilkan cuaca saat ini di lokasi tersebut.
+            </p>
+          </details>
+
+                    <details>
+            <summary>Apa itu API?</summary>
+            <p>
+              API (Application Programming Interface) adalah antarmuka 
+              yang memungkinkan satu aplikasi berkomunikasi dengan aplikasi lain.  
+              API menyediakan aturan dan format data sehingga program bisa saling bertukar 
+              informasi tanpa harus mengetahui detail internal satu sama lain.
+            </p>
+          </details>
+
+          <details>
+            <summary>Salah satu pola arsitektur API adalah RESTful. Apa itu RESTful API?</summary>
+            <img src="/img/3_Arsitektur RESTful API_Syahid Nurhidayatullah.png" alt="RESTful API Diagram" class="faq-image" />
+            <p>
+              RESTful API merupakan arsitektur yang menggunakan protokol HTTP untuk mengakses data dalam format JSON. 
+              Dalam aplikasi Cek Cuaca ini, API PositionStack dan WeatherStack menggunakan metode RESTful untuk mengirim dan menerima data lokasi serta informasi cuaca.
+            </p>
+          </details>
+
+          <details>
+            <summary>Dari mana data cuaca diambil?</summary>
+            <p>
+              Aplikasi ini menggunakan data dari WeatherStack API untuk informasi cuaca
+              dan Positionstack API untuk data lokasi.
+            </p>
+          </details>
+
+          <details>
+            <summary>Mengapa hasil cuaca terkadang tidak muncul?</summary>
+            <p>
+              Hal itu bisa terjadi karena koneksi internet tidak stabil, lokasi tidak ditemukan,
+              atau server API sedang sibuk. Coba beberapa saat lagi atau periksa ejaan nama tempatmu.
+            </p>
+          </details>
+
+          <details>
+            <summary>Apakah aplikasi ini gratis digunakan?</summary>
+            <p>
+              Ya, aplikasi ini sepenuhnya gratis untuk digunakan dalam skala pribadi atau pembelajaran.
+            </p>
+          </details>
+
+          <details>
+            <summary>Bisakah saya menyarankan fitur baru?</summary>
+            <p>
+              Tentu! Kamu bisa menghubungi pengembang melalui halaman “Tentang” untuk memberikan saran atau umpan balik.
+            </p>
+          </details>
+        </div>
+      </section>
+
+    </div>
+    {{> footer}}
+  </body>
+</html>

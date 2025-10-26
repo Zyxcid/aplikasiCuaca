@@ -1,0 +1,54 @@
+<html lang="id">
+  <head>
+    {{>htmlHead}} 
+  </head>
+
+  <body>
+    <div class="main-content">
+      {{>header}}
+
+      <section class="about-section">
+        <div class="tentang-aplikasi">
+          <h2>Tentang Aplikasi</h2>
+          <p>
+            Aplikasi ini adalah proyek sederhana berbasis
+            <em>Node.js</em> dan <em>Express</em> yang dibuat untuk membantu pengguna
+            memeriksa kondisi cuaca berdasarkan lokasi yang dimasukkan.
+          </p>
+          <p>
+            Data lokasi diambil menggunakan layanan Positionstack API,
+            sedangkan informasi cuaca diambil dari WeatherStack API.
+          </p>
+        </div>
+
+        <div class="tentang-saya">
+          <h2>Tentang Saya</h2>
+          <div class="tentang-saya-content">
+            <div>
+              <p>
+                Saya {{nama}} dengan NIM {{nim}}, seorang mahasiswa Teknik Informatika Universitas Negeri Padang.
+                Saya tertarik dengan teknologi, desain, dan ingin membuat aplikasi
+                yang bermanfaat bagi banyak orang.
+              </p>
+              <div>
+                <p><strong>Kontak Saya:</strong></p>
+                <p>Email: <a href="mailto:syahidnursanjaya2005@gmail.com">syahidnursanjaya2005@gmail.com</a></p>
+                <p>Phone: <a href="">+62 895-3915-62529</a></p>
+              </div>
+              </div>
+              <a href="https://i.imgur.com/4ca8LMz.jpeg" target="_blank" rel="noopener noreferrer">
+                <img
+                  class="foto-saya"
+                  src="https://i.imgur.com/4ca8LMz.jpeg"
+                  alt="Mi Terenak Semester 5"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    {{> footer}}
+  </body>
+</html>

@@ -1,0 +1,203 @@
+h1 {
+  color: grey;
+}
+img {
+  width: 250px;
+}
+
+body {
+  color: #333333;
+  font-family: arial;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+footer {
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
+}
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+header a {
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none;
+}
+.portrait {
+  width: 250px;
+}
+input {
+  border: 2px solid #cccccc;
+  padding: 8px;
+  width: 300px;
+}
+button {
+  cursor: pointer;
+  border: 2px solid #cccccc;
+  background: gray;
+  color: white;
+  padding: 8px;
+}
+
+.info-cuaca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.icon-cuaca {
+  width: 60px;
+  height: 60px;
+}
+
+.about-section {
+  display: flex; /* Mengaktifkan layout fleksibel (horizontal) */
+  flex-direction: column;
+  justify-content: space-between; /* Memberi jarak antara kiri dan kanan */
+  align-items: center; /* Menyelaraskan vertikal */
+  gap: 3rem; /* Jarak antar kolom */
+}
+
+.faq-section,
+.about-section,
+.search-section,
+.news-section {
+  background-color: #f0f8ff;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tentang-aplikasi,
+.tentang-saya {
+  flex: 1;
+}
+
+.tentang-saya-content {
+  display: flex;
+}
+
+.foto-saya {
+  width: 20vw;
+  height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-saya:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.tentang-sosial {
+  display: flex;
+  justify-content: center; /* Biar icon di tengah */
+  align-items: center;
+  gap: 1.5rem; /* Jarak antar icon */
+  margin-top: 2rem;
+}
+
+.faq-list details {
+  margin-bottom: 1rem;
+  border: 1px solid #cccccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.faq-list summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #0078d7;
+}
+
+.faq-list details:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-list p {
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.faq-image {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 2rem auto;
+}
+
+.daftar-berita {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.berita-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.berita-card:hover {
+  transform: translateY(-3px);
+}
+
+.berita-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.berita-card a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.berita-card a:hover {
+  text-decoration: underline;
+}
+
+.tombol-view-more {
+  padding: 10px 20px;
+  background-color: #0078d7;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tombol-view-more:hover {
+  background-color: #005fa3;
+}

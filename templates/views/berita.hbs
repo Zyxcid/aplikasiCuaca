@@ -1,0 +1,42 @@
+<html lang="id">
+  <head>
+    <title>{{judul}}</title>
+    {{>htmlHead}}
+  </head>
+  <body>
+    <div class="main-content">
+      {{>header}}
+
+      <section class="news-section">
+          {{#if error}}
+            <p style="color: red;">{{error}}</p>
+          {{else}}
+            {{#if daftarBerita.length}}
+              <div class="daftar-berita">
+                {{#each daftarBerita}}
+                  <div class="berita-card">
+                    <h3><a href="{{this.url}}" target="_blank">{{this.judul}}</a></h3>
+                    <p>{{this.deskripsi}}</p>
+                    <small><b>Sumber:</b> {{this.sumber}}</small>
+                  </div>
+                {{/each}}
+              </div>
+            {{else}}
+              <p>Tidak ada berita ditemukan.</p>
+            {{/if}}
+          {{/if}}
+      </section>
+    </div>
+
+    <div class="tombol-selengkapnya">
+        <a href="https://www.cnnindonesia.com/" 
+            class="tombol-view-more"
+            target="_blank" 
+            rel="noopener noreferrer">
+            Lihat Berita Lainnya →
+        </a>
+    </div>
+
+    {{>footer}}
+  </body>
+</html>
